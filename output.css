@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.1.4 | MIT License | https://tailwindcss.com
+ tailwindcss v3.1.4 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -1056,7 +1056,10 @@ input:checked + .toggle-bg {
 }
 
 .ml-1 {
-  margin-left: 0.25rem;
+  margin-left: 5.8rem;
+}
+.ml-2 {
+  margin-left: 16rem;
 }
 
 .mt-4 {
@@ -1105,6 +1108,9 @@ input:checked + .toggle-bg {
 
 .mt-5 {
   margin-top: 1.25rem;
+}
+.mt-6 {
+  margin-top: 9rem;
 }
 
 .mb-1 {
@@ -1204,7 +1210,7 @@ input:checked + .toggle-bg {
 }
 
 .max-w-2xl {
-  max-width: 42rem;
+  max-width: 40rem;
 }
 
 .max-w-screen-md {
