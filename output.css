@@ -2259,6 +2259,11 @@ input:checked + .toggle-bg {
     margin-bottom: 0px;
   }
 
+  .mb-0{
+    margin-bottom: 0px;
+  }
+  
+
   .lg\:mb-12 {
     margin-bottom: 3rem;
   }
