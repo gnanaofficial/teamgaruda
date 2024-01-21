@@ -175,16 +175,18 @@
             <h3 class="mb-8 text-2xl font-semibold md:text-[28px] md:leading-[1.42] text-white dark:text-white">
               Send us a Message
             </h3>
-            <form id="contactForm" action="/process_form.php" method="post" >
+            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
               <div class="mb-[22px]">
+
                 <label for="fullName" class="block mb-4 text-sm text-white dark:text-dark-6">Full Name*</label>
-                <input type="text" name="fullName" placeholder="Adam Gelius"
+                <input type="hidden" name="access_key" value="f68c22a1-8687-4ca4-8fc4-193a7b8f7f62">
+                <input type="text" name="fullName" placeholder="Adam Gelius" required
                   class="bg-transparent w-full text-body-color dark:text-dark-6 placeholder:text-body-color/60 border-0 border-b border-[#f1f1f1] dark:border-dark-3 pb-3 focus:border-primary focus:outline-none" />
               </div>
               
               <div class="mb-[22px]">
-                <label for="email" class="block mb-4 text-sm text-white dark:text-dark-6">Email*</label>
-                <input type="email" name="email" placeholder="example@yourmail.com"
+                <label for="email" id="email" class="block mb-4 text-sm text-white dark:text-dark-6">Email*</label>
+                <input type="email" name="email" placeholder="example@yourmail.com" required
                   class="bg-transparent w-full text-body-color dark:text-dark-6 placeholder:text-body-color/60 border-0 border-b border-[#f1f1f1] dark:border-dark-3 pb-3 focus:border-primary focus:outline-none" />
               </div>
               <div class="mb-[22px]">
@@ -194,11 +196,11 @@
               </div>
               <div class="mb-[30px]">
                 <label for="message" class="block mb-4 text-sm text-white dark:text-dark-6">Message*</label>
-                <textarea name="message" rows="1" placeholder="type your message here"
+                <textarea name="message" rows="1" placeholder="type your message here" required
                   class="bg-transparent w-full text-body-color dark:text-dark-6 placeholder:text-body-color/60 resize-none border-0 border-b border-[#f1f1f1] dark:border-dark-3 pb-3 focus:border-primary focus:outline-none"></textarea>
               </div>
               <div class="mb-0">
-                <button type="submit" onclick="submitForm()"
+                <button type="submit" 
                   class="inline-flex items-center justify-center px-10 py-3 text-base font-medium text-black-300 transition duration-300 ease-in-out rounded-md bg-white hover:bg-blue-dark">
                   Send
                 </button>
@@ -212,42 +214,9 @@
 
 
 
+
 </body>
 
-<script>
-    function submitForm() {
-        // Retrieve form data
-        var fullName = document.getElementsByName("fullName")[0].value;
-        var email = document.getElementsByName("email")[0].value;
-        var phone = document.getElementsByName("phone")[0].value;
-        var message = document.getElementsByName("message")[0].value;
-    
-        // Perform client-side validation if needed
-    
-        // Send AJAX request
-        var xhr = new XMLHttpRequest();
-        var url = "process_form.php"; // Replace with the actual server-side script URL
-    
-        xhr.open("POST", url, true);
-        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState === 4 && xhr.status === 200) {
-                // Handle the server response, e.g., show a success message
-                console.log(xhr.responseText);
-            }
-        };
-    
-        // Prepare form data
-        var formData = "fullName=" + encodeURIComponent(fullName) +
-                       "&email=" + encodeURIComponent(email) +
-                       "&phone=" + encodeURIComponent(phone) +
-                       "&message=" + encodeURIComponent(message);
-    
-        // Send the request
-        xhr.send(formData);
-    }
-    </script>
     
 
 
