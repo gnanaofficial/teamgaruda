@@ -1082,6 +1082,9 @@ input:checked + .toggle-bg {
 .ml-2 {
   margin-left: 16rem;
 }
+.ml-6 {
+  margin-left: 20rem;
+}
 .ml-3 {
   margin-left: 25rem;
 }
