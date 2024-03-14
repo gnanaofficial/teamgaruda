@@ -1024,6 +1024,9 @@ input:checked + .toggle-bg {
 .z-40 {
   z-index: 40;
 }
+.z-50 {
+  z-index: 50;
+}
 
 .col-span-2 {
   grid-column: span 2 / span 2;
@@ -1634,6 +1637,12 @@ input:checked + .toggle-bg {
 
 .pt-20 {
   padding-top: 5rem;
+}
+.pt-21 {
+  padding-top: 12rem;
+}
+.pt-22 {
+  padding-top: 15rem;
 }
 
 .pb-8 {
@@ -2543,6 +2552,77 @@ input:checked + .toggle-bg {
 
 .mb-12{
   margin-bottom: 3rem;
+}
+
+.fix {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000; /* Ensure the navigation bar is above other content */
+  background-color: #ffffff; /* Adjust the background color as needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+}
+
+
+
+.video-loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+  /* Additional styles for customizing the carousel */
+  .carousel-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    height: 190px; /* Set your desired height */
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.carousel {
+    display: flex;
+    animation: scrolling infinite linear 20s; /* Adjust the duration */
+}
+
+.carousel img {
+    width: 660px;
+    height: 190px; /* Adjust the image size */
+    object-fit:cover; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+    margin-right: 8px; /* Adjust the spacing between images */
+}
+
+/* Keyframes for infinite scrolling animation */
+@keyframes scrolling {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-96%); }
+}
+@-webkit-keyframes scrolling{
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-95%); }
 }
 
 
