@@ -90,20 +90,90 @@
     <br>
     
     <section class="bg-white dark:bg-gray-900">
+
+ <!-- Carousel Container -->
+ <div class ="pt-21">
+    <div class="carousel-container">
+        <!-- Carousel Content -->
+        <div class="carousel">
+            <!-- Images for Carousel -->
+            <img src="Workimages/WhatsApp Image 2023-10-05 at 15.33.13_0c6fd677.jpg" alt="Image 1">
+            <img src="Workimages/WhatsApp Image 2023-10-05 at 15.40.39_387d714b.jpg" alt="Image 2">
+            <img src="Workimages/WhatsApp Image 2023-10-05 at 16.34.27_2f0e8ac9.jpg" alt="Image 3">
+            <img src="Workimages/WhatsApp Image 2023-10-05 at 16.34.28_dc3107f3.jpg" alt="Image 3">
+            <!-- Add more images as needed -->
+        </div>
+    </div>
+</div>
+<!-- Start block -->
+
+<!-- Script for auto-scrolling -->
+<script>
+    // Auto-scrolling Carousel
+    const carousel = document.querySelector('.carousel');
+    const images = document.querySelectorAll('.carousel img');
+    const numImages = images.length;
+
+    // Clone all images and append them to the end
+    images.forEach((image) => {
+        const clone = image.cloneNode(true);
+        carousel.appendChild(clone);
+    });
+
+    // Auto-scrolling function
+    let scrollAmount = 0;
+    const scrollStep = 2; // Adjust the scroll speed
+
+    function autoScroll() {
+        scrollAmount += scrollStep;
+        if (scrollAmount > carousel.scrollWidth) {
+            scrollAmount = 0;
+        }
+        carousel.style.transform = `translateX(-${scrollAmount}px)`;
+    }
+
+    setInterval(autoScroll, 3000); // Adjust the interval for auto-scrolling
+</script>
+
+
+
+
+
+
+
+
+
         <div class="grid max-w-screen-xl px-4 pt-20  mx-auto lg:gap-8  xl:gap-0 lg:py-16 lg:grid-cols-12 ">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <div class="  lg:col-span-5 lg:flex      ">
                 <img src="./images/Business chart.gif" alt="hero ">
             </div>                
-            <div class="mr-auto lg:col-span-7">
+            <div class="mr-auto  lg:col-span-7">
                 <h1 class="max-w-2xl mt-6 ml-1 text-5xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl dark:text-white"> High impact   <br> SERVICES  </h1>
                 
                 
                 <p class="max-w-2xl mb-6 ml-1 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">To take your bussiness into next level <br> </p>
                 
                 <div class="space-y-4 sm:flex sm:space- sm:space-x-4">
-                    <br>
-                    <br>
-                    <br>
                    
                 </div>
             </div>

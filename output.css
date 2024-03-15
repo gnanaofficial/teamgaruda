@@ -1101,6 +1101,9 @@ input:checked + .toggle-bg {
 .mt-4 {
   margin-top: 1rem;
 }
+.mt-3 {
+  margin-top: 0.75rem;
+}
 
 .mr-auto {
   margin-right: auto;
@@ -1116,6 +1119,9 @@ input:checked + .toggle-bg {
 
 .mr-2 {
   margin-right: 0.5rem;
+}
+.mr-3 {
+  margin-right: 8rem;
 }
 
 .mb-2 {
@@ -1145,8 +1151,11 @@ input:checked + .toggle-bg {
 .mt-5 {
   margin-top: 1.25rem;
 }
-.mt-6 {
+.mt-7 {
   margin-top: 9rem;
+}
+.mt-12 {
+  margin-top: 3rem;
 }
 
 .mb-1 {
@@ -1184,6 +1193,9 @@ input:checked + .toggle-bg {
 .hidden {
   display: none;
 }
+.h-fit{
+  height: fit-content;
+}
 
 .h-6 {
   height: 1.5rem;
@@ -1212,7 +1224,13 @@ input:checked + .toggle-bg {
 .h-12 {
   height: 3rem;
 }
+.h-screen {
+  height: 100vh;
+}
 
+.w-fit {
+  width: fit-content;
+}
 .w-full {
   width: 100%;
 }
@@ -1562,6 +1580,12 @@ input:checked + .toggle-bg {
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
+.hover:opacity-75{
+  opacity: 0.75;
+}
+
+
+
 
 .p-2 {
   padding: 0.5rem;
@@ -1636,6 +1660,9 @@ input:checked + .toggle-bg {
 .pl-3 {
   padding-left: 0.75rem;
 }
+.pl-4 {
+  padding-left: 35rem;
+}
 
 .pr-4 {
   padding-right: 1rem;
@@ -1658,6 +1685,9 @@ input:checked + .toggle-bg {
 }
 .pt-22 {
   padding-top: 15rem;
+}
+.pt-24 {
+  padding-top: 20rem;
 }
 
 .pb-8 {
@@ -2481,6 +2511,8 @@ input:checked + .toggle-bg {
     background-color: transparent;
   }
 
+  
+
   .lg\:hover\:text-purple-700:hover {
     --tw-text-opacity: 1;
     color: rgb(108 43 217 / var(--tw-text-opacity));
@@ -2655,8 +2687,9 @@ input:checked + .toggle-bg {
   background-color: #2563EB;
 }
 
-.relative {
-  position: relative;
+.bg-primary-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
 }
 .justify-between {
   justify-content: space-between;
@@ -2677,9 +2710,148 @@ input:checked + .toggle-bg {
 .text-dark {
   color: #1F2937;
 }
+.place-items-center{
+  place-items: center;
+}
 
-
-
-
+.bottom-4{
+  bottom: 1rem; /* 16px */
+}
+.end-4{
+  right: 1rem; /* 16px */
+}
+.start-4{
+  left: 1rem; /* 16px */
+}
+.top-4{
+  top: 1rem; /* 16px */
+}
+.gap-4{
+  gap: 1rem; /* 16px */
+}
+.bg-black{
+  background-color: #000000;
+}
+.py-16{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.gap-3{
+  gap: 0.75rem;
+}
+.-mx-6{
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+}
+.overflow-x-auto{
+  overflow-x: auto;
+}
+.size-20{
+  font-size: 20px;
+}
+.size-7{
+  font-size: 7px;
+}
+.m-auto{
+  margin: auto;
+}
+.rounded-xl{
+  border-radius: 0.75rem;
+}
+.dark:bg-gray-900{
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+}
+.dark:border-white{
+  border-color: rgb(255 255 255 / 15%);
+}
   
+.before:absolute{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;}
+  .before-0{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 1;
+  }
+  .before:rounded{
+    border-radius: 0.75rem;
+  }
+  .before:inset-0{
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .before:z-10{
+    z-index: 10;
+  }
+  .before:border-t{
+    border-top-width: 1px;
+  }
+  .before:border-b{
+    border-bottom-width: 1px; 
+  }
+  .before:border-white{
+    border-color: rgba(255, 255, 255, 0.15);
+  }
+  .before:from-gray-100{
+    --tw-gradient-from: #f3f4f6;
+  }
+  .dark:before:border-white{
+    border-color: rgb(255 255 255 / 15%);
+  }
+  .dark:before:shadow-gray-950{
+    --tw-shadow-color: rgb(17 24 39);
+  }
+  .dark:before:to-transparent{
+    --tw-gradient-to: transparent;
+  }
+.max-w-6xl{
+  max-width: 72rem;
+}
+.sm:mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+.sm:px-0{
+  padding-left: 0;
+}
+.dark:text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-gray-950{
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+.dark:border-white{
+  border-color: rgb(255 255 255 / 15%);
+}
+
+
+
+
+
+
+
+
+
+
+
 }

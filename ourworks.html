@@ -127,7 +127,7 @@
     
 
 
-
+<div class="pt-22"></div>
 
 
 
@@ -160,20 +160,7 @@
         
         <!-- End block -->
         
-        <!-- Carousel Container -->
-        <div class ="pt-22">
-            <div class="carousel-container">
-                <!-- Carousel Content -->
-                <div class="carousel">
-                    <!-- Images for Carousel -->
-                    <img src="Workimages/WhatsApp Image 2023-10-05 at 15.33.13_0c6fd677.jpg" alt="Image 1">
-                    <img src="Workimages/WhatsApp Image 2023-10-05 at 15.40.39_387d714b.jpg" alt="Image 2">
-                    <img src="Workimages/WhatsApp Image 2023-10-05 at 16.34.27_2f0e8ac9.jpg" alt="Image 3">
-                    <img src="Workimages/WhatsApp Image 2023-10-05 at 16.34.28_dc3107f3.jpg" alt="Image 3">
-                    <!-- Add more images as needed -->
-                </div>
-            </div>
-        </div>
+    
         <!-- Start block -->
         
         <div class=" max-w-screen-xl px-4 pt-8  mx-auto lg:gap-8  xl:gap-0 lg:py-16 lg:grid-cols-12 ">
@@ -182,36 +169,7 @@
    
    
 
-    <!-- Script for auto-scrolling -->
-    <script>
-        // Auto-scrolling Carousel
-        const carousel = document.querySelector('.carousel');
-        const images = document.querySelectorAll('.carousel img');
-        const numImages = images.length;
     
-        // Clone all images and append them to the end
-        images.forEach((image) => {
-            const clone = image.cloneNode(true);
-            carousel.appendChild(clone);
-        });
-    
-        // Auto-scrolling function
-        let scrollAmount = 0;
-        const scrollStep = 2; // Adjust the scroll speed
-    
-        function autoScroll() {
-            scrollAmount += scrollStep;
-            if (scrollAmount > carousel.scrollWidth) {
-                scrollAmount = 0;
-            }
-            carousel.style.transform = `translateX(-${scrollAmount}px)`;
-        }
-    
-        setInterval(autoScroll, 3000); // Adjust the interval for auto-scrolling
-    </script>
-    
-    
-
 <!-- <div class="sticky top-0 z-10 py-3 bg-white ">
             <div class="flex fixed ml-1 items-center justify-center py-4 md:py-8 flex-wrap sm:space-x-4">
                 <button type="button"onclick="changeCategory('all')" class="text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800">All</button>
@@ -399,7 +357,10 @@
     
 //         // Initial load with 'all' category
 //         changeCategory('all');
-
+document.addEventListener('DOMContentLoaded', function() {
+    // Call changeCategory function with the default category
+    changeCategory('Politics');
+});
 function changeCategory(category) {
     const media = getMediaByCategory(category); // Fetch both images, videos, and text based on the category
     const gallery = document.getElementById('gallery');
@@ -717,7 +678,7 @@ function getMediaByCategory(category) {
 
 <br>
             <footer>
-            <div class="flex flex-col items-center justify-between md:flex-row">
+            <div class="flex flex-col items-center justify-between md:flex-row py-4">
                 <a href="#">
                     <img class="w-auto h-7" src="favicon-16x16.png" alt="">
                 </a>
