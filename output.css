@@ -2705,6 +2705,9 @@ input:checked + .toggle-bg {
 .w-half{
   width: 50%;
 }
+.w-half1{
+  width: 75%;
+}
 .w-half-1{
   width: 38%;
 }
