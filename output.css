@@ -3005,6 +3005,29 @@ input:checked + .toggle-bg {
 
 
 
+/* #mobile-menu-2 {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 5px); 
+  width: 180px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#mobile-menu-2 a {
+  display: block;
+  padding: 8px 0;
+  text-decoration: none;
+}
+
+#mobile-menu-2 a:hover {
+  background-color: #f3f4f6; 
+} */
+/* Adjust the positioning of the menu */
+#mobile-menu-2 {
+  top: calc(100% + 5px); /* Position it below the button */
+  /* Other styles */
+}
+
 
 
 
