@@ -35,6 +35,13 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link href="./output.css" rel="stylesheet">
+
+
+     <!-- Cache control -->
+     <meta http-equiv="Cache-Control" content="max-age=86400, must-revalidate">
+     <meta http-equiv="Expires" content="86400">
+     <meta http-equiv="Pragma" content="max-age=86400, must-revalidate">
+     <meta http-equiv="Cache-Control" content="public">
    
 
     <!-- <script async defer src="https://buttons.github.io/buttons.js"></script> -->
@@ -321,6 +328,55 @@
       </section>
     <!-- End block -->
    
+    <aside id="whatsappContact" class="hidden fixed bottom-4  z-50 flex items-center justify-center gap-4 rounded-lg bg-black px-5 py-3 text-white">
+        <a id="whatsappLink" href="#" target="_blank" rel="noreferrer" class="text-sm font-medium hover:opacity-75">
+          Hey! Come Check This Out 👋
+        </a>
+      
+        <button id="closeWhatsappContact" class="rounded bg-white/20 p-1 hover:bg-white/10">
+          <span class="sr-only">Close</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+            <path
+              fillRule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clipRule="evenodd"
+            />
+          </svg>
+        </button>
+      </aside>
+      
+      
+      <script>
+ document.addEventListener("DOMContentLoaded", function() {
+  const whatsappContact = document.getElementById('whatsappContact');
+  const whatsappLink = document.getElementById('whatsappLink');
+  const closeWhatsappContact = document.getElementById('closeWhatsappContact');
+
+  // Show WhatsApp contact section slowly from right to left
+  setTimeout(function() {
+    whatsappContact.classList.remove('hidden');
+  }, 5000); // Adjust the delay time as needed (5000 milliseconds = 5 seconds)
+
+  // Close WhatsApp contact section
+  closeWhatsappContact.addEventListener('click', function() {
+    whatsappContact.style.right = '-100%'; // Move the section to the right side
+    setTimeout(function() {
+      whatsappContact.classList.add('hidden');
+    }, 500); // Delay before hiding the section
+  });
+
+  // Open WhatsApp when clicking on the link
+  whatsappLink.addEventListener('click', function(event) {
+    // Prevent default behavior to avoid following the link
+    event.preventDefault();
+    // Replace this with your WhatsApp URL
+    window.open('https://wa.me/+918688281821', '_blank');
+  });   
+});
+
+
+      </script> 
+      
 
 
 

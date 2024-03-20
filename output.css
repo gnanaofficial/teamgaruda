@@ -1670,7 +1670,7 @@ input:checked + .toggle-bg {
   padding-left: 0.60rem;
 }
 .pl-4 {
-  padding-left: 35rem;
+  padding-left: 9rem;
 }
 
 .pr-4 {
@@ -1684,6 +1684,9 @@ input:checked + .toggle-bg {
 }
 .pr-7 {
   padding-right: 10rem;
+}
+.pr-8 {
+  padding-right: 14rem;
 }
 
 .pt-1 {
@@ -2901,8 +2904,14 @@ input:checked + .toggle-bg {
 .h-13{
   height: 150px;
 }
+.h-15{
+  height: 270px;
+}
 .w-14{
   width: 200  px;
+}
+.w-15{
+  width: 500  px;
 }
 .text-gray-700{
   --tw-text-opacity: 1;
@@ -2982,6 +2991,18 @@ input:checked + .toggle-bg {
 .flex-none{
   flex: none;
 }
+
+/* Add transition effect for smooth animation */
+/* Add transition effect for smooth animation */
+/* Add transition effect for smooth animation */
+#whatsappContact {
+  transition: right 0.5s ease-in-out;
+}
+.text-blue-500{
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
 
 
 
